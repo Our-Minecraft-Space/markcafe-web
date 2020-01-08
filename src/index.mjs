@@ -21,9 +21,6 @@ async function main() {
     const oldImageRule = md.renderer.rules.image;
     md.renderer.rules.image = (tokens, idx, options, env, slf) => {
         if (tokens[idx].nesting !== 0) return oldImageRule(tokens, idx, options, env, slf);
-        if (tokens[idx].attrGet('src').startsWith('images/')) {
-            tokens[idx].attrSet('src', config.imgSrcPrefix + tokens[idx].attrGet('src'));
-        }
         let result = oldImageRule(tokens, idx, options, env, slf);
         if (idx === 0) {
             result = `<div class="img-wrapper">` + result;
