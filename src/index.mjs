@@ -34,9 +34,8 @@ async function main() {
         return result;
     };
     
-    const css = await (await fetch(`https://markcafe.finalchild.me/default${document.getElementById('is-non-wide').checked ? '-non-wide' : ''}.css`)).text()
-    
     document.getElementById('convert-button').addEventListener('click', async event => {
+        const css = await (await fetch(`https://markcafe.finalchild.me/default${document.getElementById('is-non-wide').checked ? '-non-wide' : ''}.css`)).text()
         document.getElementById('out').value = renderMdToCafeHtml(md, css, document.getElementById('in').value);
     });
 }
