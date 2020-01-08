@@ -1,7 +1,7 @@
 {
   "name": "markcafe-web",
   "version": "1.0.0-SNAPSHOT",
-  "description": "Convert MarkDown to HTML compatible with Naver Cafe online",
+  "description": "Web app for writing articles on Naver Cafe with Markdown.",
   "keywords": [
     "naver",
     "cafe",
