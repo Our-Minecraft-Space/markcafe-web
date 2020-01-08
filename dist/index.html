@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="utf-8">
+        <title>마크카페</title>
+
+        <script async type="module" src="main.mjs"></script>
+
+        <style>
+            textarea {
+                width: 955px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <label for="in">마크다운으로 글을 입력해 주세요.</label><br>
+        <textarea id="in" name="in" autocomplete="off" autofocus></textarea><br>
+
+        <button id="convert-button" type="bytton">변환</button><input id="is-non-wide" name="is-non-wide" type="checkbox" style="margin-left: 3em;"><label for="is-wide">와이드스킨이 아닙니다</label><br>
+
+        <label for="out">아래에 출력됩니다</label><br>
+        <textarea id="out" name="out" readonly></textarea>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "markcafe-web",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "Convert MarkDown to HTML compatible with Naver Cafe online",
+  "keywords": [
+    "naver",
+    "cafe",
+    "markdown"
+  ],
+  "homepage": "https://markcafe.finalchild.me",
+  "bugs": {
+    "url": "https://github.com/finalchild/markcafe-web/issues"
+  },
+  "license": "Unlicense",
+  "author": {
+    "name": "Final Child",
+    "email": "finalchild2@gmail.com",
+    "url": "https://finalchild.me"
+  },
+  "browser": "dist/main.mjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/finalchild/markcafe-web.git"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "juice": "^6.0.0",
+    "markdown-it": "^10.0.0",
+    "markdown-it-container": "^2.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
