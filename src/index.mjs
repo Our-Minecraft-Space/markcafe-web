@@ -8,11 +8,14 @@ const template1End = `</div>`
 main();
 
 async function main() {
-    const config = await (await fetch('https://markcafe.finalchild.me/markcafe-config.json')).text();
-    const md = new MarkdownIt(config.markdownItOptions).use(containerPlugin, 'tip', {
+    const md = new MarkdownIt({
+        "html": true,
+        "breaks": true,
+        "typographer": true
+    }).use(containerPlugin, 'tip', {
         render: (tokens, idx) => {
             if (tokens[idx].nesting === 1) {
-                return `<div class="tip-header">${config.tipHeaderContent}</div>\n<div class="tip">`;
+                return `<div class="tip-header">팁</div>\n<div class="tip">`;
             } else {
                 return `</div>\n`;
             }
