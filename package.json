@@ -7,15 +7,15 @@
     "cafe",
     "markdown"
   ],
-  "homepage": "https://markcafe.finalchild.me",
+  "homepage": "https://markcafe.finalchild.dev",
   "bugs": {
     "url": "https://github.com/finalchild/markcafe-web/issues"
   },
   "license": "Unlicense",
   "author": {
     "name": "Final Child",
-    "email": "finalchild2@gmail.com",
-    "url": "https://finalchild.me"
+    "email": "me@finalchild.dev",
+    "url": "https://finalchild.dev"
   },
   "browser": "dist/main.mjs",
   "repository": {
@@ -26,12 +26,12 @@
     "build": "webpack"
   },
   "dependencies": {
-    "juice": "^6.0.0",
-    "markdown-it": "^10.0.0",
-    "markdown-it-container": "^2.0.0"
+    "juice": "^10.0.0",
+    "markdown-it": "^14.0.0",
+    "markdown-it-container": "^4.0.0"
   },
   "devDependencies": {
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
